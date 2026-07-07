@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+
+
+
+#principal {
+    font-family: 'Bonheur Royale';
+    font-weight: bolder;
+    font-size: 5em;
+    font-style: normal;
+    text-align: center;
+    background-color: #400118;
+    color: #d47b16;
+    
+}
+
+.subtitulo {
+    color: #D4AF37;
+    text-decoration: underline;
+    font-size: 3em;
+   
+}
+
+.topicos {
+    color: #D4AF37;
+    text-decoration: underline;
+    font-size: 2em;
+
+}
+
+.explicacao {
+    color: #D4AF37;
+    text-decoration: underline;
+    font-size: 2em;
+
+}
+
+.local {
+    color: #D4AF37;
+    text-decoration: underline;
+    font-size: 2em;
+
+}
+
+p {
+    color: #F5E6C8;
+    font-style: italic;
+   
+}
+
+li {
+    color: #F5E6C8;
+}
+
+
+
+body {
+    background-image: linear-gradient( to right,#400118,#000000);
+}
+
+div {
+    text-align:right;
+}
+
+
+
+

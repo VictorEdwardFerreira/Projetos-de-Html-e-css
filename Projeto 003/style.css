@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
+a {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0a0a0a;
+    font-family: 'Geist', Arial, Helvetica, sans-serif;
+    transition-duration: 2s;
+    
+}
+
+header {
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 0px 20px 4px white;
+    padding: 10px;
+    margin: -8px;   
+    
+    
+}
+
+nav >a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 1s;
+    border-radius: 10%;
+}
+
+nav >a:hover {
+    background-color: chartreuse;
+    
+
+    
+
+}
+
+
+main  {
+    color: white;
+    
+    
+    
+}
+
+p {
+    
+    font-weight: bold;
+}
+
+
+h2 {
+    color: chartreuse;
+    
+}
+
+
+
+
+    
+
+.projetos {
+    text-align: center;
+    
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+    
+}
+
+
+
+.Sobre {
+    border-radius: 30px 30px 30px 30px ;
+    background-color: rgba(0, 0, 0, 0.439);
+    box-shadow: 0px -1px 4px 0px #38b900;
+   padding: 10px;
+    margin-top: 10px;
+    
+   
+}
+
+.Imagem1{
+ border: 1px solid white;
+    margin-top: 20px;
+   box-shadow: 0px -1px 4px 0px #38b900;
+   border-radius: 40px;
+    
+
+    
+}
+
+.Imagem2 {
+     border: 1px solid white;
+    box-shadow: 0px 0px 20px rgb(202, 23, 23);
+}
+
+.Imagem3 {
+    border: 1px solid white;
+   box-shadow: 0px 0px 20px rgba(218, 123, 0, 0.788) ; 
+   
+}
+
+.Avaliação {
+    border: 1px solid white;
+    box-shadow: -3px -1px 20px rgb(230, 226, 0);
+    margin-top: 40px;
+   
+}
+
+.Habilidades {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.439);
+    max-width: 300px;
+    color: #ffffff;
+    display: block;
+    margin: auto ;
+    margin-top: 20px;
+    columns: 2;
+    padding: 10px;
+    list-style-position: inside;
+    box-shadow: 0px -1px 4px 0px #38b900;
+    max-width: 900px;
+
+   
+
+    
+}
+
+
+
+
+
+
+.Contatos2 >a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.Contatos2 >a:hover {
+    text-decoration: underline;
+}
+
+#Contato ul ul {
+    list-style: disc;
+    
+}
+
+.border {
+    border-radius: 22px 22px 18px 20px;;
+    background-color: #141414;
+    width: 120px;
+    box-shadow: 0px -1px 4px 0px #38b900;
+}
+
+.border2 {
+    border-radius: 22px 22px 18px 20px;;
+    background-color: #141414;
+    width: 110px;
+    box-shadow: 0px -1px 4px 0px #38b900;
+    
+}
+
+
+
+span {
+    color: chartreuse;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block ;
+    margin: 0 auto;
+
+
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+

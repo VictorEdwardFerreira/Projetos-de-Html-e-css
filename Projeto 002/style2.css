@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+
+
+body {
+    background-image: linear-gradient(to right,#400118,#000000);
+}
+
+
+header {
+    background-color: #400118;
+    color: #d47b16;
+    text-align: center;
+    margin: -8px;
+    padding: 10px;
+
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Bonheur Royale';
+}
+
+nav >a {
+    color: #d47b16;
+    text-decoration: none;
+
+}
+
+nav >a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    color: #F5E6C8;
+    font-family: 'Ballet:opsz@16';
+}
+
+
+footer {
+    margin: -7px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    color: #000000;
+    
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    
+
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    width: auto;
+}
