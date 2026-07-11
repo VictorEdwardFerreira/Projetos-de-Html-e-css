@@ -7,6 +7,7 @@ header {
     border-bottom: 1px solid;
 }
 
+
 nav  {
     text-align: center;
     padding: 10px;
@@ -17,7 +18,7 @@ nav >a {
     text-decoration: none;
     transition-duration: 4s;
     border-radius: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 nav >a:hover {
@@ -28,47 +29,19 @@ nav >a:hover {
 main {
     margin: auto;
     max-width: 900px;
+    font-weight: bold;
 }
 
 ul {
     list-style: disc;
 }
 
-input {
-    width: 300px;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 40px;
-    outline: none;
-    transition-duration: 2s;
-    background-color: #36353b;
-    color: white;
-    
-}
-
-input:focus {
-    border-color: #1500ff;
-    box-shadow: 0 0 8px rgba(19, 0, 226, 0.2);
-}
-
-
-input::placeholder {
-    color: #999;
-}
-
-form {
-    width: 400px;
-}
-
-.Contato {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-
-}
-
-textarea {
-     background-color: #36353b;
+img {
+    margin-top: 20px;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 3px rgb(0, 0, 0);
 }
