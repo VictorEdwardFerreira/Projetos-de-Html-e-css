@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
-a {
-    scroll-behavior: smooth;
-}
 body {
     background-color: #0a0a0a;
     font-family: 'Geist', Arial, Helvetica, sans-serif;
@@ -11,24 +8,32 @@ body {
 }
 
 header {
-    color: white;
-    border: 1px solid white;
-    box-shadow: 2px 0px 20px 4px white;
     padding: 10px;
     margin: -8px;
     position: fixed;
-  top: 0;
-  width: 100%;
+    top: 0;
+    width: 100%;
+     color: white;
+     border-bottom: 1px solid rgb(72, 72, 72);
+    border: 10%;
     
     
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0a0a0a;
+    z-index: 1000;
+}
+
 nav >a {
-    color: white;
+    color: rgb(235, 239, 235);
     text-decoration: none;
     padding: 10px;
     transition-duration: 2s;
     border-radius: 10%;
+
 }
 
 nav >a:hover {
