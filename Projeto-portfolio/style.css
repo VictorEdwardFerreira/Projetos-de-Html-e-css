@@ -15,7 +15,10 @@ header {
     border: 1px solid white;
     box-shadow: 2px 0px 20px 4px white;
     padding: 10px;
-    margin: -8px;   
+    margin: -8px;
+    position: fixed;
+  top: 0;
+  width: 100%;
     
     
 }
@@ -24,7 +27,7 @@ nav >a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition-duration: 1s;
+    transition-duration: 2s;
     border-radius: 10%;
 }
 
@@ -39,6 +42,7 @@ nav >a:hover {
 
 main  {
     color: white;
+    padding-top: 80px;
     
     
     
