@@ -8,38 +8,34 @@ body {
 }
 
 header {
-    background-color: #ebe4e4;
-    border-bottom: 1px solid rgb(255, 3, 3);
-    margin-top: 10px;
+    background: #141414;
+    border-bottom: 1px solid chartreuse;
+    padding: 10px 10px;
+    position: sticky;
     position: fixed;
     width: 100%;
-    padding: 5px;
-     height: 80px;
-    
+    backdrop-filter: blur(10px);
+    top: 0;
+    margin: -7px;
 }
 
 nav {
     text-align: center;
+    border-radius: 10px;
+    
 }
 
-nav >a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+nav a{
     padding: 10px;
-    transition-duration: 2s;
-    border-radius: 10%;
-     height: 80px;
-
+    text-decoration: none;
+    color: white;
+    
 }
 
 nav >a:hover {
-    background-color: chartreuse;
-    
-
-    
-
+     animation-duration: 1s;
+    color: #38b900;
 }
-
 
 main  {
     color: white;
