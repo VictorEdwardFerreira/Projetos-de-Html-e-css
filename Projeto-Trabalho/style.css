@@ -133,16 +133,14 @@ footer p {
     padding: 30px;
     color: var(--Cor005);
     text-decoration: none;
-     border: 2px solid transparent;
-    transition: .3s;
+    transition: all 2s;
      box-shadow: 10px 10px 10px 10px black;
+     border: 2px solid transparent;
      
 }
 
 .Link a:hover {
-     border-color: var(--Cor005);
-    background: transparent;
-    color: var(--Cor005);
+     background: transparent;
 }
 
 .Cards {
@@ -182,7 +180,7 @@ footer p {
 }
 
 .Depoimento:hover {
-    transform: translateY(-12px);
+    transform: skew(10deg,10deg);
     border-color: var(--Cor003);
     box-shadow:0 20px 45px var(--Cor003);
 }
