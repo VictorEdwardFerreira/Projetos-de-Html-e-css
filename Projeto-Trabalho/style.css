@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Cor002);
+    overflow-x: hidden;
+}
+
+:root {
+    --Cor001: #0d0d0d;
+    --Cor002: #171717;
+    --Cor003: #d4af37;
+    --Cor004: #f0d27a;
+    --Cor005: #f5f5f5;
+    --Cor006: #bdbdbd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+
+nav a:hover {
+    background-color: var(--Cor003);
+}
+
+main {
+    max-width: 900px;
+    width: 90%;
+    color: var(--Cor006);
+    margin: auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: var(--Cor005);
+}
+
+footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 40px;
+}
+
+footer h2 {
+    color: var(--Cor003);
+}
+
+footer p {
+    color: var(--Cor006);
+}
+
+.Hero {
+    background-image: url('imagens/ChatGPT\ Image\ 27\ de\ jul.\ de\ 2026\,\ 19_31_32.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center right;
+    width: 100%;
+}
+
+.Hero h1 {
+    color: var(--Cor003);
+    position: absolute;
+    top: 150px;
+    font-size: clamp(3.2rem, 13vw, 6rem);
+    left: 0px;
+}
+
+.Hero h3 {
+    color: var(--Cor005);
+    position: absolute;
+    top: 250px;
+}
+
+.Nav {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.Nav h2 {
+    color: var(--Cor003);
+    font-size: 60px;
+}
+
+.Link {
+    position: absolute;
+    top: 450px;
+}
+
+.Link a {
+    border-radius: 10px;
+    background-color: var(--Cor003);
+    padding: 30px;
+    color: var(--Cor005);
+    text-decoration: none;
+    transition: all 2s;
+    box-shadow: 10px 10px 10px 10px black;
+    border: 2px solid transparent;
+}
+
+.Link a:hover {
+    background: transparent;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
+}
+
+.Card {
+    background-color: var(--Cor001);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, .05);
+}
+
+.Card:hover {
+    transform: translate(40px, -20px);
+    border-color: var(--gold);
+    box-shadow: 0 20px 45px var(--Cor003);
+}
+
+.Depoimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
+    gap: 30px;
+}
+
+.Depoimento {
+    background-color: var(--Cor001);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: 1s;
+    border: 1px solid rgba(247, 245, 245, 0.05);
+}
+
+.Depoimento:hover {
+    transform: skew(10deg, 10deg);
+    border-color: var(--Cor003);
+    box-shadow: 0 20px 45px var(--Cor003);
+}
+
+.Depoimento img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.Contatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
+    gap: 30px;
+}
+
+.Contato {
+    background-color: var(--Cor001);
+    border-radius: 20px;
+    text-align: center;
+    padding: 60px;
+    font-size: 30px;
+}
+
+.Contatos img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.Contatos a {
+    padding: 18px 45px;
+    border-radius: 50px;
+    background-color: var(--Cor003);
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.Contatos a:hover {
+    transform: translateY(-6px);
+    background: var(--gold2);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, .35);
+}
