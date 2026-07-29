@@ -35,7 +35,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    transition-duration: 2s;
+    transition-duration: 35s;
     
     
 }
@@ -133,7 +133,7 @@ footer p {
     padding: 30px;
     color: var(--Cor005);
     text-decoration: none;
-    transition: all 2s;
+    transition: all 35s;
      box-shadow: 10px 10px 10px 10px black;
      border: 2px solid transparent;
      
@@ -154,13 +154,13 @@ footer p {
     border-radius: 20px;
     padding: 40px;
     text-align: center;
-    transition: 1s;
+    transition: all 35s;
     border: 1px solid rgba(255,255,255,.05);
 }
 
 .Card:hover {
      transform: translate(40px, -20px);
-    border-color:var(--gold);
+    border-color:var(--Cor003);
     box-shadow:0 20px 45px var(--Cor003);
 }
 
@@ -175,7 +175,7 @@ footer p {
     border-radius: 20px;
     padding: 40px;
     text-align: center;
-    transition: 1s;
+    transition: all 35s;
     border: 1px solid rgba(247, 245, 245, 0.05);
 }
 
@@ -218,7 +218,7 @@ footer p {
     background-color: var(--Cor003);
     color: white;
     text-decoration: none;
-    transition: .3s;
+    transition: all 35s;
 }
 
 .Contatos a:hover {
