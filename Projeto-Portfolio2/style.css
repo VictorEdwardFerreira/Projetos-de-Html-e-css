@@ -120,9 +120,45 @@ main p {
     padding: 5px;
 }
 
-main {
-    text-align: center;
+.Projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 30px;
+     cursor: pointer;
+     
+
 }
+
+.Videos {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--color-3);
+    box-sizing: border-box;
+    transition: all 1s;
+    
+}
+
+.Videos:hover {
+    transform: translateY(40px);
+     box-shadow: 4px 4px 20px 9px var(--color-6);
+    
+}
+
+.Videos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.Botão1 {
+    text-decoration: none;
+}
+
 
 
 
