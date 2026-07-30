@@ -1,0 +1,66 @@
+.Depoimentos{
+    padding: 80px 10%;
+}
+
+.Depoimentos h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Depoimentos-Grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.Depoimento{
+    background:var(--color-2);
+    border:1px solid var(--color-9);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+}
+
+.Depoimento:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px var(--color-8);
+}
+
+.Aspas{
+    font-size:60px;
+    color:var(--color-7);
+    line-height:1;
+}
+
+.Depoimento p{
+    color:var(--color-5);
+    line-height:1.7;
+    margin:15px 0;
+}
+
+.Estrelas{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.Pessoa{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.Pessoa img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.Pessoa h4{
+    color:var(--color-4);
+}
+
+.Pessoa span{
+    color:var(--color-5);
+    font-size:14px;
+}
