@@ -27,7 +27,7 @@ html {
 nav {
     color: var(--color-4);
     background-color: var(--color-2);
-    padding: 10px;
+    padding: 0px;
     border-bottom: 1px solid var(--color-6);
     position: fixed;
     width: 100%;
@@ -36,9 +36,6 @@ nav {
     
 }   
 
-.A {
-    text-align: end;
-}
 
 nav a {
     color: var(--color-4);
@@ -50,81 +47,6 @@ span {
     color: var(--color-7);
 }
 
-.Textos {
-
-    margin-top: 100px;
-   
-}
-
-.Textos h1 {
-    text-align: left;
-    font-size: 70px;
-}
-
-
-
-
-
-
-
-.Botão1 {
-
-    border-radius: 20px;
-    padding: 10px 40px;
-    background-color: var(--color-6);
-    width: 100px;
-    text-align: center;
-    box-shadow: 3px 2px 10px 0px var(--color-6) ;
-    
-
-}
-
-
-.Botão1 a {
-    text-decoration: none;
-}
-
-.Botão2 {
-
-    border-radius: 20px;
-    padding: 10px 40px;
-    background-color: var(--color-6);
-    width: 100px;
-    text-align: center;
-    box-shadow: 3px 2px 10px 0px var(--color-6) ;
-    
-
-}
-
-
-.Botão2 a  {
-    text-decoration: none;
-}
-
-.Cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 30px;
-}
-
-.Card {
-    background-color: var(--color-2);
-    border-radius: 20px;
-    text-align: center;
-    padding: 40px;
-    transition: all 1s;
-}
-
-.Card:hover {
-    transform: skew(10deg,10deg);
-    box-shadow: 5px 5px 5px 5px var(--color-6);
-}
-
-.Card img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
 
 main p {
     padding: 5px;
@@ -144,6 +66,20 @@ main h2, h1 {
 main h3 {
     color: var(--color-6);
 }
+
+
+footer {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 30px;
+}
+
 .Projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -166,7 +102,7 @@ main h3 {
 }
 
 .Videos:hover {
-    transform: translateY(40px);
+    transform: skew(10deg,10deg);
      box-shadow: 4px 4px 20px 9px var(--color-6);
     
 }
@@ -183,7 +119,43 @@ main h3 {
 
 .Botão1 {
     text-decoration: none;
+    transition: 1s;
 }
+
+
+.Botão1 {
+
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: var(--color-6);
+    width: 100px;
+    text-align: center;
+    box-shadow: 3px 2px 10px 0px var(--color-6) ;
+    
+
+}
+
+.Botão2 {
+
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: var(--color-6);
+    width: 100px;
+    text-align: center;
+    box-shadow: 3px 2px 10px 0px var(--color-6) ;
+    transition: 1s;
+    
+
+}
+
+.Botão1:hover {
+    transform: translateX(40px)
+}
+
+.Botão2:hover {
+    transform: translateX(40px)
+}
+
 
 .Serviços {
     display: grid;
@@ -238,12 +210,86 @@ main h3 {
     color: var(--color-6);
 }
 
+.Textos {
+
+    margin-top: 150px;
+   
+}
+
+.Textos h1 {
+    text-align: left;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+.Botão1 a {
+    text-decoration: none;
+}
+
+
+
+.Botão2 a  {
+    text-decoration: none;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
+}
+
+.Card {
+    background-color: var(--color-2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    transition: all 1s;
+}
+
+.Card:hover {
+     transform: translateY(-10px);
+}
+
+.Card img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.A {
+    text-align: end;
+}
+
+.A a {
+    border-radius: 20px;
+     transition: 1s;
+}
+
+.A a:hover {
+   background-color: var(--color-6);
+}
+
+
+.A img {
+    width: 90px;
+    display: flex;
+    
+}
+
+
 @media (max-width: 768px) {
     .A {
         text-align: center;
     }
 }
-
 
 
 
