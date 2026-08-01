@@ -100,12 +100,14 @@ footer p {
     background-color: var(--color-3);
     box-sizing: border-box;
     transition: all 1s;
+
     
 }
 
 .Videos:hover {
     transform: skew(10deg,10deg);
-     box-shadow: 4px 4px 20px 9px var(--color-6);
+    box-shadow: inset 4px 4px 20px 15px var(--color-6);
+    
     
 }
 
@@ -222,13 +224,6 @@ footer p {
     text-align: left;
     font-size: 70px;
 }
-
-
-
-
-
-
-
 
 
 
