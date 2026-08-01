@@ -291,7 +291,8 @@ footer p {
     border-radius: 20px;
     position: absolute;
     left: 940px;
-    top: 150px;
+    top: 170px;
+    box-shadow: 4px 4px 40px 20px var(--color-6);
 }
 
 
@@ -302,20 +303,18 @@ footer p {
 
     .Imagem1 img {
         position: absolute;
-        top: 600px;
-        left: 0;
+        top: 700px;
+        left: 40px;
     }
 
     main {
-        position: absolute;
-        top: 900px;
+       margin-top: 350px;
     }
 
-    footer {
-        position: absolute;
-        top: 7406px;
-    }
+    
 }
+
+
 
 
 
