@@ -80,6 +80,8 @@ footer p {
     font-size: 30px;
 }
 
+
+
 .Projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -284,10 +286,34 @@ footer p {
     
 }
 
+.Imagem1 img {
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    left: 940px;
+    top: 150px;
+}
+
 
 @media (max-width: 768px) {
     .A {
         text-align: center;
+    }
+
+    .Imagem1 img {
+        position: absolute;
+        top: 600px;
+        left: 0;
+    }
+
+    main {
+        position: absolute;
+        top: 900px;
+    }
+
+    footer {
+        position: absolute;
+        top: 7406px;
     }
 }
 
