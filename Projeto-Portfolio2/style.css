@@ -56,7 +56,10 @@ main {
     width: 90%;          
   max-width: 1200px;   
   margin: 0 auto;
+  transition: 1s;
 }
+
+
 
 main h2, h1 {
     text-align: center;
@@ -288,6 +291,12 @@ footer p {
     left: 940px;
     top: 170px;
     box-shadow: 4px 4px 40px 20px var(--color-6);
+    transition: all 1s;
+}
+
+.Imagem1 img:hover {
+    transform: translateX(40px);
+    
 }
 
 
