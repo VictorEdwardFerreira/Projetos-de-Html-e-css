@@ -1,0 +1,50 @@
+.avaliacoes {
+      width: 100%;
+    overflow: hidden;
+}
+
+.avaliacoes-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+
+    animation: passar 25s linear infinite;
+}
+
+.avaliacao {
+    width: 320px;
+    flex-shrink: 0;
+
+    padding: 25px;
+
+    background: #111118;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 15px;
+}
+
+.estrelas {
+    color: #ffd166;
+    margin-bottom: 15px;
+}
+
+.avaliacao p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.avaliacao strong {
+    color: white;
+}
+
+@keyframes passar {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
