@@ -109,7 +109,7 @@ footer p {
 
 .Videos:hover {
     transform: skew(10deg,10deg);
-    box-shadow: inset 4px 4px 20px 15px var(--color-6);
+    box-shadow: 4px 4px 20px 0px var(--color-6);
     
     
 }
@@ -219,7 +219,7 @@ footer p {
 
 .Textos {
 
-    margin-top: 150px;
+    margin-top: 100px;
    
 }
 
@@ -290,12 +290,13 @@ footer p {
     position: absolute;
     left: 940px;
     top: 170px;
-    box-shadow: 4px 4px 40px 20px var(--color-6);
     transition: all 1s;
+     
 }
 
 .Imagem1 img:hover {
-    transform: translateX(40px);
+    transform: translateY(-10px);
+ box-shadow: 0px 2px 9px 1px var(--color-6);
     
 }
 
