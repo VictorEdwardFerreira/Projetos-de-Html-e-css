@@ -3,282 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cola Cola — Sinta o Sabor</title>
-  <style>
-    :root {
-      --red-main: #e60012;
-      --red-dark: #99000b;
-      --bg-dark: #0a0a0a;
-      --bg-card: #141414;
-      --text-light: #f5f5f5;
-      --text-gray: #a0a0a0;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-      overflow-x: hidden;
-    }
-
-    /* Navegação */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 8%;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: rgba(10, 10, 10, 0.85);
-      backdrop-filter: blur(10px);
-      z-index: 100;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 900;
-      font-style: italic;
-      color: var(--red-main);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: var(--text-light);
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--red-main);
-    }
-
-    /* Seção Hero */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 8%;
-      background: radial-gradient(circle at 70% 50%, rgba(230, 0, 18, 0.25), transparent 50%);
-      margin-top: 60px;
-    }
-
-    .hero-text {
-      max-width: 550px;
-    }
-
-    .hero-text h1 {
-      font-size: 4rem;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-      font-weight: 900;
-    }
-
-    .hero-text h1 span {
-      color: var(--red-main);
-      background: linear-gradient(45deg, var(--red-main), #ff4d4d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      color: var(--text-gray);
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-
-    .btn-main {
-      display: inline-block;
-      padding: 16px 36px;
-      background: linear-gradient(45deg, var(--red-main), var(--red-dark));
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 50px;
-      box-shadow: 0 10px 25px rgba(230, 0, 18, 0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .btn-main:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 30px rgba(230, 0, 18, 0.6);
-    }
-
-    .hero-image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .can-mockup {
-      width: 280px;
-      height: 480px;
-      background: linear-gradient(135deg, #e60012 0%, #80000a 100%);
-      border-radius: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset -15px 0 20px rgba(0,0,0,0.4), inset 15px 0 20px rgba(255,255,255,0.2);
-      transform: rotate(-8deg);
-      transition: transform 0.5s ease;
-    }
-
-    .can-mockup:hover {
-      transform: rotate(0deg) scale(1.05);
-    }
-
-    .can-brand {
-      font-size: 2.5rem;
-      font-weight: 900;
-      font-style: italic;
-      color: white;
-      transform: rotate(-90deg);
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    /* Seção de Sabores */
-    .features {
-      padding: 100px 8%;
-      background-color: var(--bg-card);
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
-    }
-
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: var(--bg-dark);
-      padding: 40px 20px;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card-icon {
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: var(--text-gray);
-      font-size: 0.95rem;
-    }
-
-    /* Rodapé */
-    footer {
-      text-align: center;
-      padding: 40px;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      color: var(--text-gray);
-      font-size: 0.9rem;
-    }
-
-    /* Responsividade */
-    @media (max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding-top: 60px;
-      }
-
-      .hero-text {
-        margin-bottom: 50px;
-      }
-
-      .hero-text h1 {
-        font-size: 2.8rem;
-      }
-
-      nav {
-        display: none;
-      }
-    }
-  </style>
+  <title>Eduard Store | Next-Gen Gaming Gear</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo">Cola Cola</div>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sabores">Sabores</a>
-      <a href="#experiencia">Experiência</a>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <div class="logo">EDUARD<span>STORE</span></div>
+      <div class="nav-links">
+        <a href="#catalogo">Equipamentos</a>
+        <a href="#specs">Comparativo</a>
+        <a href="#contato">Atendimento</a>
+      </div>
+      <a href="https://wa.me/5500000000000" target="_blank" class="btn-whatsapp">
+        <span>Falar no WhatsApp</span>
+      </a>
     </nav>
+  </div>
+
+  <header class="hero">
+    <div class="status-badge">
+      <span class="dot"></span> Atendimento Online & Envio Imediato
+    </div>
+    <h1>EQUIPAMENTOS DE <span>ALTA PERFORMANCE</span> PARA O SEU SETUP</h1>
+    <p>Engenharia de precisão, iluminação RGB avançada e os melhores componentes para eSports.</p>
   </header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-text">
-      <h1>Sinta a Explosão de <span>Sabor Supremo</span></h1>
-      <p>A refrescância perfeita para qualquer momento do seu dia. Abra uma Cola Cola gelada e desperte seus sentidos.</p>
-      <a href="#sabores" class="btn-main">Experimente Agora</a>
+  <main class="container">
+
+    <section class="banner-pro">
+      <div class="banner-content">
+        <span class="badge-tag">MOUSEDETALHE</span>
+        <h2>Cyber-X Pro Wireless</h2>
+        <p>Sensor de 26.000 DPI reais, taxa de polling de 4000Hz e apenas 59g. Construído em estrutura colmeia interna reforçada.</p>
+        <div class="features-list">
+          <div class="feat">⚡ 0.2ms Resposta</div>
+          <div class="feat">🔋 80h Bateria</div>
+          <div class="feat">🛡️ 2 Anos Garantia</div>
+        </div>
+      </div>
+      <div class="banner-display">
+        <div class="glow-box">🖱️</div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <h2 class="section-heading">Catálogo de Produtos</h2>
+
+      <div class="grid-products">
+
+        <div class="card">
+          <div class="card-image">
+            <span class="card-status stock">Em Estoque</span>
+            <div class="icon">⌨️</div>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Teclados</span>
+            <h3>Apex Mechanical 75%</h3>
+            <p>Switches Hot-swappable, isolamento acústico em silicone e Keycaps PBT Double-shot.</p>
+            <div class="spec-pills">
+              <span>Gasket Mount</span>
+              <span>RGB Per-Key</span>
+              <span>USB-C / BT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <span class="card-status stock">Em Estoque</span>
+            <div class="icon">🎙️</div>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Microfones</span>
+            <h3>Studio Streamer V2</h3>
+            <p>Captação profissional em 192kHz/24bit com botão Touch Mute e filtro de ruído integrado.</p>
+            <div class="spec-pills">
+              <span>Cardioide</span>
+              <span>Pop Filter</span>
+              <span>Shock Mount</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <span class="card-status stock">Em Estoque</span>
+            <div class="icon">🖼️</div>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Mousepads</span>
+            <h3>Surface Cordura 3XL</h3>
+            <p>Tecido de altíssima durabilidade à prova d'água, com bordas costuradas e base antiderrapante.</p>
+            <div class="spec-pills">
+              <span>1200x600mm</span>
+              <span>4mm Espessura</span>
+              <span>Speed/Control</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <span class="card-status pre-order">Sob Encomenda</span>
+            <div class="icon">🎧</div>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Áudio</span>
+            <h3>Cyber-Acoustics 7.1</h3>
+            <p>Audio espacial imersivo com drivers de 50mm e microfone com cancelamento ativo de ruído.</p>
+            <div class="spec-pills">
+              <span>Surround 7.1</span>
+              <span>Drivers 50mm</span>
+              <span>240g Ultra Leve</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="specs-section" id="specs">
+      <h2 class="section-heading">Tabela Comparativa de Tecnologias</h2>
+      <div class="table-wrapper">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Modelo</th>
+              <th>Tecnologia Principal</th>
+              <th>Conectividade</th>
+              <th>Perfil de Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mouse</td>
+              <td>Cyber-X Pro</td>
+              <td>Sensor Óptico 26k DPI</td>
+              <td>2.4GHz / Bluetooth / USB-C</td>
+              <td>FPS / eSports</td>
+            </tr>
+            <tr>
+              <td>Teclado</td>
+              <td>Apex 75%</td>
+              <td>Switches Red Linear</td>
+              <td>USB-C Removível</td>
+              <td>Moba / Digitação / FPS</td>
+            </tr>
+            <tr>
+              <td>Microfone</td>
+              <td>Streamer V2</td>
+              <td>Condensador 24-bit</td>
+              <td>USB Plug & Play</td>
+              <td>Live Stream / Podcasts</td>
+            </tr>
+            <tr>
+              <td>Mousepad</td>
+              <td>Cordura 3XL</td>
+              <td>Tecido Híbrido Cordura®</td>
+              <td>N/A</td>
+              <td>Setup Completo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <div class="footer-inner">
+      <div class="logo">EDUARD<span>STORE</span></div>
+      <p>Catálogo digital de periféricos de alta performance. Entre em contato para orçamentos e disponibilidade.</p>
+      <div class="footer-rights">&copy; 2026 Eduard Store. Todos os direitos reservados.</div>
     </div>
-
-    <div class="hero-image">
-      <div class="can-mockup">
-        <span class="can-brand">COLA COLA</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="sabores">
-    <h2 class="section-title">Por que escolher Cola Cola?</h2>
-    
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <h3>Gás Intenso</h3>
-        <p>A quantidade exata de borbulhas para garantir a máxima refrescância até o último gole.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">❄️</div>
-        <h3>Ultra Gelada</h3>
-        <p>Fórmula desenvolvida para entregar o sabor perfeito nas temperaturas mais baixas.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🔥</div>
-        <h3>Sabor Inconfundível</h3>
-        <p>A mistura secreta de ingredientes premium que você já conhece e ama.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Cola Cola Inc. Todos os direitos reservados.</p>
   </footer>
 
 </body>
