@@ -72,18 +72,28 @@ nav a:hover {
 
 main {
     max-width: 900px;
-    height: 20px;
     margin: auto;
+    font-weight: bold;
    
 }
 
 main section {
-    margin-top: 210px;
+    margin-top: 60px;
 }
 
+
+
+
+
 .Sobre {
+    width: 400px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    margin: auto;
     text-align: center;
     
+
 }
 
 .Sobre2 {
@@ -92,7 +102,7 @@ main section {
   font-size: 2.5rem;         
   font-weight: 900;         
   letter-spacing: 1.5px;      
-  text-transform: uppercase;  
+   text-transform: uppercase;  
   text-align: center;
   max-width: 800px;
    margin: auto; 
@@ -109,6 +119,8 @@ main section {
   max-width: 800px;
    margin: auto;
 }
+
+
 
 .Sobre2 span {
    background-color: var(--accent-secondary);
@@ -143,57 +155,163 @@ main section {
 
 }
 
-.Vitrene{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-     height: 220px;
-     max-width: 950px;
-  
+img {
+    width: 400px;
 }
 
-.cards {
-     background-color: var(--Cor001);
-    padding: 40px;
-    transition: 1s;
-    border-radius: 40px;
-    border: 1px solid #66fcf1;
 
-  
+.Slide-Vitrene {
+    width: 100%;
+    overflow: hidden;
+    background: var(black);
+    padding: 2rem 0;
+}
+
+.Slider {
+    display: flex;
+    width: calc(250px * 8);
+    animation: girarDireita 10s linear infinite;
+}
+
+.SLIDERES {
     
+    box-shadow: 1px 2px 12px 5px #66fcf1;
+    color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 1.5rem;
+    margin: 0 60px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.slider {
-  width: 100%;
-  overflow: hidden; /* Esconde o que passar dos limites da tela */
-  background: #0b0c10;
-  padding: 2rem 0;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(250px * 8); /* Largura de cada card vezes o total de itens */
-  animation: girarDireita 10s linear infinite; /* Aplica a animação */
-}
-
-.slide {
-  width: 250px;
-  background: #1f2833;
-  color: #66fcf1;
-  border: 1px solid rgba(102, 252, 241, 0.2);
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 0 10px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Animação que faz deslizar para a direita */
 @keyframes girarDireita {
-  0% {
-    transform: translateX(-50%); /* Começa deslocado */
-  }
-  100% {
-    transform: translateX(0); /* Move continuamente para a direita */
-  }
+0% {
+    transform: translateX(-50%);
+
+
 }
+
+100% {
+    transform: translateX(0);
+}
+}
+
+.Card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
+    max-width: 150%;
+}
+
+.Cards {
+     background-color: var(--bg-main);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, .05);
+    transition: 0.5s;
+}
+
+.Cards:hover {
+    transform: translateY(40px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 20px 45px var(--Cor003);
+}
+
+.Cards img {
+    width: 200px;
+   
+}
+
+.Store {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
+    max-width: 150%;
+}
+
+.Stores {
+     background-color: var(--bg-main);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, .05);
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.Stores:hover {
+    transform: translateX(40px);
+    border: 1px solid var(--accent-secondary);
+}
+
+.botao {
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.botao a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: black;
+    padding: 20px;
+   box-shadow: 1px 1px 19px 3px #66fcf1;
+}
+
+.botao:hover {
+    transform: translateY(40px);
+}
+
+.Depoimento {
+    width: 100%;
+    overflow: hidden;
+    background: var(black);
+    padding: 2rem 0;
+}
+
+.Depoimento-msg {
+     display: flex;
+    width: calc(250px * 8);
+    animation: girarDireita 10s linear infinite;
+}
+
+.Depoimentos {
+      box-shadow: 1px 2px 12px 5px #66fcf1;
+    color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 1.5rem;
+    margin: 0 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Depoimentos img {
+      height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+footer {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* =========================
+   RESPONSIVIDADE CELULAR
+========================= */
+
