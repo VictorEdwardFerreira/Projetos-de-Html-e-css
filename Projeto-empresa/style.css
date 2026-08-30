@@ -315,3 +315,150 @@ footer {
    RESPONSIVIDADE CELULAR
 ========================= */
 
+
+/* =========================
+   RESPONSIVIDADE CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    /* HEADER */
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    main section {
+        margin-top: 40px;
+    }
+
+    /* HERO */
+    .Sobre {
+        width: 90%;
+        max-width: 400px;
+        font-size: 12px;
+    }
+
+    .Sobre2,
+    .Sobre3 {
+        width: 100%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .Sobre3 {
+        font-size: 1rem;
+    }
+
+    /* EFEITOS DE LUZ */
+    .glow-orb,
+    .glow-orb2 {
+        width: 300px;
+        height: 300px;
+        filter: blur(100px);
+    }
+
+    .glow-orb2 {
+        left: 40%;
+    }
+
+    /* SLIDER */
+    .Slide-Vitrene {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .Slider {
+        width: max-content;
+    }
+
+    .SLIDERES {
+        min-width: 220px;
+        margin: 0 15px;
+        padding: 1rem;
+    }
+
+    .SLIDERES img {
+        width: 180px;
+        max-width: 100%;
+    }
+
+    /* CARDS */
+    .Card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .Cards {
+        width: auto;
+    }
+
+    .Cards img {
+        width: 180px;
+        max-width: 100%;
+    }
+
+    /* EVITA O CARD PULAR DEMAIS NO CELULAR */
+    .Cards:hover {
+        transform: translateY(-5px);
+    }
+
+    /* STORE */
+    .Store {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .Stores:hover {
+        transform: translateX(5px);
+    }
+
+    /* BOTÃO */
+    .botao {
+        text-align: center;
+    }
+
+    .botao a {
+        display: inline-block;
+        padding: 15px 25px;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
+
