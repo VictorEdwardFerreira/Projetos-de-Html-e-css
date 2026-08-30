@@ -57,6 +57,7 @@ main {
   max-width: 1200px;   
   margin: 0 auto;
   transition: 1s;
+  font-weight: bold ;
 }
 
 
@@ -186,29 +187,36 @@ footer p {
     transform: translateY(-10px);
 }
 
-.Cards-Depoimentos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
+.Depoimento {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: var(--color-1);
+    padding: 2rem;
     
+
 }
 
-.Cards-Depoimentos img {
-    height: 70px;
+.Depoimento-msg {
+    display: flex;
+    width: calc(150px * 8);
+     animation: girarDireita 10s linear infinite;
+}
+
+.Depoimentos {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 5px 12px 3px #9d4edd;
+
+}
+
+.Depoimentos img {
+      height: 70px;
     width: 70px;
     border-radius: 50%;
     margin-left: 10px;
-
 }
-
-.Card-Depoimento {
-    transition:  1s;
-}
-
-.Card-Depoimento:hover {
-    transform: translateY(-10px);
-}
-
 
 
 
@@ -217,10 +225,39 @@ footer p {
     color: var(--color-6);
 }
 
+.H1 {
+
+     font-family: 'Montserrat', sans-serif;
+   color: #ffffff;            
+  font-size: 2.5rem;         
+  font-weight: 900;         
+  letter-spacing: 1.5px;      
+   text-transform: uppercase;  
+  text-align: center;
+  max-width: 800px;
+
+}
+
 .Textos {
 
     margin-top: 100px;
    
+}
+
+.Textos2 {
+    font-family: 'Montserrat', sans-serif;
+   color: #ffffff;            
+  font-size: 2.5rem;         
+  font-weight: 900;         
+  letter-spacing: 1.5px;      
+   text-transform: uppercase;  
+  text-align: center;
+  max-width: 800px;
+
+}
+
+.Textos2 span {
+    color: #9d4edd;
 }
 
 .Textos h1 {
@@ -301,22 +338,66 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 726px) {
     .A {
         text-align: center;
     }
 
+    .Imagem1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
     .Imagem1 img {
-        position: absolute;
-        top: 700px;
-        left: 40px;
+        position: static;
+        width: min(85vw, 350px);
+        height: auto;
+        display: block;
     }
 
     main {
-       margin-top: 350px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 727px) and (max-width: 1024px) {
+    .A {
+        text-align: center;
     }
 
-    
+    .Imagem1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .Imagem1 img {
+        position: static;
+        width: min(65vw, 500px);
+        height: auto;
+        display: block;
+    }
+
+    main {
+        margin-top: 60px;
+    }
+}
+
+@keyframes girarDireita {
+0% {
+    transform: translateX(-50%);
+
+
+}
+
+100% {
+    transform: translateX(0);
+}
 }
 
 
