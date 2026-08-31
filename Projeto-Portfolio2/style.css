@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: var(--color-1);
+   background-color: var(--color-1);
     color: var(--color-5);
 }
 
@@ -73,11 +73,9 @@ main h3 {
 
 
 footer {
-    background-color: var(--color-2);
-    color: white;
+    width: 100%;
+    background-color:black;
     text-align: center;
-    font-size: 30px;
-    padding: 20px;
 }
 
 footer p {
@@ -177,7 +175,7 @@ footer p {
     border-radius: 20px;
     text-align: center;
     padding: 40px;
-    transition:  1s;
+    transition:  0.2s;
     
     
     
@@ -258,6 +256,7 @@ footer p {
 
 .Textos2 span {
     color: #9d4edd;
+     
 }
 
 .Textos h1 {
@@ -288,7 +287,7 @@ footer p {
     border-radius: 20px;
     text-align: center;
     padding: 40px;
-    transition: all 1s;
+    transition: 0.5s;
 }
 
 .Card:hover {
@@ -322,19 +321,36 @@ footer p {
 }
 
 .Imagem1 img {
-    width: 300px;
+     width: 500px;
     border-radius: 20px;
     position: absolute;
     left: 940px;
     top: 170px;
-    transition: all 1s;
+    transition: 0.5s;
      
 }
 
 .Imagem1 img:hover {
-    transform: translateY(-10px);
- box-shadow: 0px 2px 9px 1px var(--color-6);
+    transform: translateX(10px);
+ box-shadow: 0px 2px 40px 1px var(--color-6);
     
+}
+
+
+
+.glow-orb2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: var(--color-6);
+    border-radius: 50%;
+    opacity: 0.60;
+    filter: blur(150px);
+    z-index: 0;
+    pointer-events: none;
+
+    top: 60px;
+    left: 40%;
 }
 
 
@@ -361,6 +377,16 @@ footer p {
     main {
         margin-top: 40px;
     }
+
+    .glow-orb2 {
+        width: 200px;
+    }
+
+    .glow-orb3 {
+       
+    }
+
+   
 }
 
 @media (min-width: 727px) and (max-width: 1024px) {
@@ -386,6 +412,7 @@ footer p {
     main {
         margin-top: 60px;
     }
+
 }
 
 @keyframes girarDireita {
