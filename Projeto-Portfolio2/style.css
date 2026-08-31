@@ -26,12 +26,13 @@ html {
  
 nav {
     color: var(--color-4);
-    background-color: var(--color-2);
+    background-color: rgba(10, 10, 15, 0.75);
     padding: 0px;
     border-bottom: 1px solid var(--color-6);
     position: fixed;
     width: 100%;
-
+     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(1px);
     
     
 }   
@@ -40,7 +41,7 @@ nav {
 nav a {
     color: var(--color-4);
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 span {
@@ -65,10 +66,13 @@ main {
 main h2, h1 {
     text-align: center;
     font-size: 60px;
+   
+   
 }
 
 main h3 {
     color: var(--color-6);
+    border-radius: 5px;
 }
 
 
@@ -81,6 +85,8 @@ footer {
 footer p {
     font-size: 30px;
 }
+
+
 
 
 
@@ -233,6 +239,7 @@ footer p {
    text-transform: uppercase;  
   text-align: center;
   max-width: 800px;
+  border-bottom: 1px solid  #222230;
 
 }
 
@@ -264,6 +271,10 @@ footer p {
     font-size: 70px;
 }
 
+.Inicio {
+    font-size: 40px;
+
+}
 
 
 .Botão1 a {
@@ -301,7 +312,8 @@ footer p {
 }
 
 .A {
-    text-align: end;
+    text-align: center;
+    
 }
 
 .A a {
@@ -314,11 +326,7 @@ footer p {
 }
 
 
-.A img {
-    width: 90px;
-    display: flex;
-    
-}
+
 
 .Imagem1 img {
      width: 500px;
@@ -426,6 +434,11 @@ footer p {
     transform: translateX(0);
 }
 }
+
+.Heaader {
+    border: 1px solid #222230;
+}
+
 
 
 
