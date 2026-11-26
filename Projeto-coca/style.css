@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+  background-color: #F4F3EF;
+  color: #111111;
+}
+
+.Centro {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.Topo {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 24px 0;
+    border-bottom:  1px solid rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+.Inicio a {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    margin: 10px;
+}
+
+.Branca {
+    background-image: url(imagens/Splash\ Gelado\ de\ Coca-Cola.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   min-height: 100vh;
+    width: 100%;
+    min-height: 90vh;
+    background-color: #fafafa;
+    color: white;
+    padding: 140px 0 180px;
+
+
+}
+
+
+.Vermelha {
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgba(255, 0, 0, 0.766);
+    padding: 140px 0 180px;
+  color: white;
+
+}
+
+
+.Preto {
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(0, 0, 0);
+    padding: 140px 0 180px;
+  color: white;
+}
+
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
+
+}
+
+.Card {
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 1s;
+    border: 1px solid rgb(236, 0, 0);
+    text-align: center;
+
+}
+
+.Card:hover {
+    transform: scaleY(40px);
+    border-color: rgb(254, 254, 254);
+    box-shadow: 0 20px 45px var(red);
+}
